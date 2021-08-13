@@ -46,9 +46,7 @@ fun MessageContent(
         Column {
             Text(
                 message.author,
-                modifier = Modifier.border(2.dp,
-                    MaterialTheme.colors.secondaryVariant,
-                    CircleShape),
+                color = MaterialTheme.colors.secondaryVariant,
                 style = MaterialTheme.typography.subtitle2
             )
 
@@ -58,7 +56,6 @@ fun MessageContent(
                 Text(
                     message.body,
                     modifier = Modifier.padding(all = 8.dp),
-                    color = MaterialTheme.colors.error,
                     style = MaterialTheme.typography.body1,
                 )
             }

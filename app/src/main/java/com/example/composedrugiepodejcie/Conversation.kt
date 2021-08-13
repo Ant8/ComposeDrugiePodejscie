@@ -4,6 +4,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.composedrugiepodejcie.SampleData.conversationSample
 import com.example.composedrugiepodejcie.ui.theme.ComposeDrugiePodejścieTheme
 
 @Composable
@@ -17,9 +18,7 @@ fun Conversation(messages: List<Message>) {
 @Composable
 fun ConversationPreview() {
     ComposeDrugiePodejścieTheme {
-        Conversation(messages = sampleData.chunked(2)
-            .map { Message(it[0], it[1]) }
-        )
+        Conversation(messages = conversationSample)
     }
 }
 

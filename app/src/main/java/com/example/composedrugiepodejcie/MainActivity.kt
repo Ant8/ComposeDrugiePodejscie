@@ -3,6 +3,7 @@ package com.example.composedrugiepodejcie
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import com.example.composedrugiepodejcie.SampleData.conversationSample
 import com.example.composedrugiepodejcie.ui.theme.ComposeDrugiePodejścieTheme
 
 class MainActivity : ComponentActivity() {
@@ -10,7 +11,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeDrugiePodejścieTheme {
-                MessageContent(Message("wesół awtor", "wesoła treźdź"))
+                Conversation(messages = conversationSample)
             }
         }
     }
