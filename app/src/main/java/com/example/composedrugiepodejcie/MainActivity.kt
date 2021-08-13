@@ -1,5 +1,6 @@
 package com.example.composedrugiepodejcie
 
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -72,7 +73,11 @@ private fun MessageContent(
     }
 }
 
-@Preview
+@Preview(
+    uiMode = UI_MODE_NIGHT_YES,
+    showBackground = true,
+    name = "dark mode"
+)
 @Composable
 fun PreviewMessageContent() {
     ComposeDrugiePodejścieTheme {
