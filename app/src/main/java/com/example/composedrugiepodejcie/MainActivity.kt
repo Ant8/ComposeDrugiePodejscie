@@ -14,11 +14,11 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.focus.focusModifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -57,12 +57,17 @@ private fun MessageContent(
                 modifier = Modifier.border(2.dp, MaterialTheme.colors.secondaryVariant, CircleShape),
                 style = MaterialTheme.typography.subtitle2
             )
+            
             Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                message.body,
-                color = MaterialTheme.colors.error,
-                style = MaterialTheme.typography.body1
-            )
+
+            Surface(shape = MaterialTheme.shapes.medium, elevation = 1.dp) {
+                Text(
+                    message.body,
+                    modifier = Modifier.padding(all = 8.dp),
+                    color = MaterialTheme.colors.error,
+                    style = MaterialTheme.typography.body1,
+                )
+            }
         }
     }
 }
