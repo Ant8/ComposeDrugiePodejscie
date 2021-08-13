@@ -23,3 +23,9 @@ fun MessageContent(
 ) {
     Text(text)
 }
+
+@Preview
+@Composable
+fun PreviewMessageContent() {
+    MessageContent()
+}
