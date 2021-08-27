@@ -2,6 +2,7 @@ package com.example.composedrugiepodejcie.recycler
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.composedrugiepodejcie.R
 import com.example.composedrugiepodejcie.recycler.ui.main.MainRVFragment
 
 class MainRVActivity : AppCompatActivity() {
