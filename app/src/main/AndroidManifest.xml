@@ -11,7 +11,9 @@
         android:theme="@style/Theme.ComposeDrugiePodejście">
         <activity
             android:name=".recycler.MainRVActivity"
-            android:exported="true" />
+            android:theme="@style/Theme.ComposeRV"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".compose.MainActivity"
             android:exported="true"
