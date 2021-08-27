@@ -1,11 +1,11 @@
-package com.example.composedrugiepodejcie
+package com.example.composedrugiepodejcie.compose
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.composedrugiepodejcie.SampleData.conversationSample
-import com.example.composedrugiepodejcie.ui.theme.ComposeDrugiePodejścieTheme
+import com.example.composedrugiepodejcie.compose.SampleData.conversationSample
+import com.example.composedrugiepodejcie.compose.ui.theme.ComposeDrugiePodejścieTheme
 
 @Composable
 fun Conversation(messages: List<Message>) {

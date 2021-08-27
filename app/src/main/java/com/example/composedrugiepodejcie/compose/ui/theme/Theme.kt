@@ -1,4 +1,4 @@
-package com.example.composedrugiepodejcie.ui.theme
+package com.example.composedrugiepodejcie.compose.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

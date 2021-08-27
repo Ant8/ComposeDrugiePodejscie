@@ -1,4 +1,4 @@
-package com.example.composedrugiepodejcie
+package com.example.composedrugiepodejcie.compose
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -20,7 +20,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composedrugiepodejcie.ui.theme.ComposeDrugiePodejścieTheme
+import com.example.composedrugiepodejcie.R
+import com.example.composedrugiepodejcie.compose.ui.theme.ComposeDrugiePodejścieTheme
 
 data class Message(
     val author: String = "John Doe",
