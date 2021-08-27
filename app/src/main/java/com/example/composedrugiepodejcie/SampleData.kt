@@ -1,4 +1,6 @@
-package com.example.composedrugiepodejcie.compose
+package com.example.composedrugiepodejcie
+
+import com.example.composedrugiepodejcie.compose.Message
 
 object SampleData {
     // Sample conversation data
